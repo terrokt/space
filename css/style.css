@@ -48,15 +48,30 @@ body{
     font-weight: 400;
     color: #fff;
 }
+.btn{
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 21px;
+    border: 1px solid #fff;
+    padding: 20px 45px;
+    cursor: pointer;
+}
 .container{
     max-width: 1230px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
+.section__title{
+    font-family: 'spaceagecyrillic', sans-serif;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 400;
+}
+
 .header{
     background-image: url(../images/header-bg.jpg);
-    background-position: top center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -156,4 +171,233 @@ body{
 }
 
 
+.about{
+    background-image: url(../images/about-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 100px;
+}
+
+.about__title{
+    
+    margin-bottom: 100px;
+}
+
+.about__item{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 150px;
+    
+}
+
+.about__item:nth-child(even){
+   
+    flex-direction: row-reverse;
+}
+
+.about__img{
+    max-width: 100%;
+}
+.about__content{
+    width: 600px;
+}
+
+.about__content-title{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+.about__content-subtitle{
+    color: #036CCA;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.about__content-text{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+}
+.about__content-text p{
+    max-width: 165px;
+   
+    
+}
+
+.about__table{
+    margin-bottom: 50px;
+}
+
+.about__table-tr{
+    border: 1px solid #fff;
+    border-right: none;
+    border-left: none;
+}
+.about__table-tr+.about__table-tr{
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.about__table-td{
+    padding: 10px 30px 10px 0;
+}
+.about__table-td span{
+    font-size: 14px;
+    line-height: 17px;
+    display: block;
+}
+
+
+
+.about__table-caption{
+    caption-side: bottom;
+    text-align: left;
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.how-to{
+    background-image: url(../images/how-to__bg.jpg);
+    background-position: top center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.how-to__title{
+    margin-bottom: 100px;
+}
+.how-to__box{
+    text-align: center;
+
+}
+
+.how-to__box circle,
+.how-to__box text,
+.how-to__box foreignObject{
+    transition: all .5s;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.how-to__box g:hover circle{
+    r: 20px;
+    fill: #036CCA;
+}
+.how-to__box g:hover text{
+    font-size: 36px;
+    fill: #036CCA;
+}
+.how-to__box g:hover foreignObject{
+    font-size: 22px;
+    color: #036CCA;
+    line-height: 28px;
+}
+foreignObject{
+    max-width: 273px;
+    text-align: left;
+    line-height: 21px;
+    
+   
+}
+
+.order{
+    padding-top: 100px;
+    background-image: url(../images/order-bg.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.order__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.order__text{
+    display: flex;
+}
+.order__text p{ 
+    max-width: 165px;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.order__text p:first-child{
+    margin-right: 53px;
+}
+
+.special__offer{
+    background-image: url(../images/info-bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.offer{
+    padding-bottom: 142px;
+}
+.offer__title{
+    margin-bottom: 100px;
+}
+
+.offer__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.offer__item-box{
+    border: 1px solid #fff;
+    margin-bottom: 25px;
+    padding: 40px 75px;
+    width: 500px;
+    min-height: 400px;
+    text-align: center;
+}
+.offer__item-text{
+    font-size: 24px;
+    line-height: 29px;
+    max-width: 236px;
+    margin: 0 auto;
+    margin-bottom: 111px;
+}
+.offer__item-text span{
+    color: #CB0E0E;
+}
+
+.offer__item-oldprice{
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 16px;
+    text-align: right;
+    position: relative;
+    max-width: 70px;
+    margin-left: auto;
+}
+
+.offer__item-oldprice::after{
+    content:'';
+    display: block;
+    height: 1px;
+    width: 68px;
+    background-color: #CB0E0E;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    transform: rotate(10deg)
+}
+.offer__item-newprice{
+    font-size: 48px;
+    line-height: 57px;
+}
 
