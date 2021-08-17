@@ -55,6 +55,7 @@ body{
     border: 1px solid #fff;
     padding: 20px 45px;
     cursor: pointer;
+    text-align: center;
 }
 .container{
     max-width: 1230px;
@@ -191,6 +192,7 @@ body{
     display: flex;
     justify-content: space-between;
     padding-bottom: 150px;
+    flex-wrap: wrap;
     
 }
 
@@ -305,6 +307,9 @@ body{
     color: #036CCA;
     line-height: 28px;
 }
+.how-to__list{
+    display: none;
+}
 foreignObject{
     max-width: 273px;
     text-align: left;
@@ -357,12 +362,15 @@ foreignObject{
     display: flex;
     justify-content: space-between;
 }
+.offer__btn{
+    max-width: 500px;
+}
 .offer__item-box{
     border: 1px solid #fff;
     margin-bottom: 25px;
     padding: 40px 75px;
     width: 500px;
-    min-height: 400px;
+    /* min-height: 400px; */
     text-align: center;
 }
 .offer__item-text{
@@ -653,10 +661,140 @@ foreignObject{
     
 }
 
+
+
+/* Адаптив сайта */
+
+
+
+
+@media (max-width: 1160px){
+    .about__title{
+        text-align: center;
+    }
+    .about__item{
+        display: block;
+        text-align: center;
+        padding-bottom: 100px;
+    }
+    .about__item-img{
+        margin-bottom: 50px;
+    }
+    .about__content{
+        width: 100%;
+    }
+    .about__content-text{
+        display: block;
+    }
+    .about__content-text p{
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .about__table{
+        margin: 20px auto;
+    }
+    
+
+    .how-to__title{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .services-box__list{
+        font-size: 20px;
+    }
+    .special__offer{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .contacts{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .contacts__guarantees{
+        margin-bottom: 50px;
+    }
+    .contacts__box{
+        width: 600px;
+    }
+
+    .contacts__inner{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .footer__inner{
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 1060px){
+    .offer{
+        padding-bottom: 50px;
+    }
+    .offer__inner{
+        display: block;
+    }
+    .offer__item-box{
+        width: 100%;
+    }
+    .offer__btn{
+        margin-bottom: 50px;
+        max-width: 100%;
+    }
+    
+
+    
+}
+
 @media (max-width: 1024px){
     .login{
         margin-right: 0;
     }
+    .order__inner{
+        flex-direction: column;
+    }
+    .how-to{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .order{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    .order__title{
+        margin-bottom: 50px;
+    }
+    .order__text{
+        display: block;
+    }
+    .order__text p{
+        max-width: 100%;
+       
+        margin-bottom: 20px;
+    }
+    .order__text p:first-child{
+        margin-right: 0;
+    }
+
+    .offer__title{
+        text-align: center;
+    }
+
+    .services__title{
+        text-align: center;
+    }
+
+    .services-box__list{
+        font-size: 18px;
+    }
+
+    .services__btn{
+        font-size: 16px;
+    }
+
+    
 }
 
 @media (max-width: 895px){
@@ -709,9 +847,78 @@ foreignObject{
     .header{
         background-position: center right;
     }
+
+    .how-to svg{
+        display: none;
+    }
+    .how-to__list{
+        display: block;
+        list-style: none;
+    }
+    .how-to__list-item{
+        padding-top: 25px;
+        padding-bottom: 15px;
+        position: relative;
+    }
+    .how-to__list-item::before{
+        content: '';
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 49%;
+
+    }
+
+
+
+    .services{
+        padding-bottom: 50px;
+    }
+    .services__inner{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .services-box__buttons{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .services-box__list{
+        margin-right: 0;
+        text-align: center;
+    }
+    .services__list-item{
+        margin-bottom: 25px;
+    }
+    .services__list-item::before{
+        display: none;
+    }
+    .slider__box-img{
+        width: 100%;
+        
+    }
+    .slider__inner{
+        padding: 0;
+    }
+
+    .contacts__guarantees{
+        width: 100%;
+    }
+    .contacts__box{
+        width: 100%;
+    }
+    .contacts__form{
+        margin-top: 25px;
+    }
 }
 
-@media (max-width: 620px){
+
+
+
+
+@media (max-width: 640px){
     .header__title span{
         font-size: 60px;
     }
@@ -749,6 +956,159 @@ foreignObject{
         margin-top: 15px;
         
     }
+    .about{
+        padding-top: 50px;
+    }
+    .about__title{
+        margin-bottom: 50px;
+        font-size: 38px;
+        line-height: 38px;
+    }
+    .about__item{
+        padding-bottom: 50px;
+    }
+    .about__table{
+        font-size: 14px;
+        width: 100%;
+    }
+    .about__table-tr:first-child{
+        display: none;
+    }
+    .about__table-td{
+        text-align: right;
+        display: block;
+        
+    }
+    .about__table-td:not(:last-child){
+        border-bottom: 1px solid #fff;
+    }
+    .about__table-td span{
+        display: inline-block;
+    }
+    .about__table-td::before{
+        content:attr(aria-label);
+        float: left;
+    }
+    .about__table-tr+.about__table-tr {
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: 400;
+      
+    }
+    .about__item-img{
+        width: 100%;
+    }
+    .about__btn{
+        font-size: 16px;
+    }
+
+    .how-to{
+        padding-top: 50px;
+    }
+    .how-to__title{
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 38px;
+    }
+    .order__title{
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 38px;
+    }
+
+    .offer__title{
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 38px;
+    }
+    .footer__inner{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer{
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    .footer__menu{
+        margin: 0;
+        margin-bottom: 25px;
+    }
+    .footer__text{
+        margin: 0;
+        margin-bottom: 25px;
+    }
+
+
+
+
+
+
+    .services-box__buttons{
+        width: 100%;
+    }
+    .services-box__list{
+        width: 100%;
+    }
+    .services__title{
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 38px;
+    }
+    .slider__description{
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .contacts__title{
+        font-size: 36px;
+        line-height: 38px;
+    }
+    .contacts__description{
+        font-size: 20px;
+    }
+}
+@media (max-width: 500px){
+    .services__title{
+        font-size: 22px;
+        line-height: 22px;
+    }
+    .contacts__title{
+        font-size: 22px;
+        line-height: 22px;
+        margin-bottom: 25px;
+    }
+    .contacts__description{
+        font-size: 16px;
+    }
+    
+}
+@media (max-width: 468px){
+    .order__title{
+        font-size: 22px;
+        line-height: 22px;
+    }
+    .offer__title{
+        font-size: 22px;
+        line-height: 22px;
+    }
+    .services__title{
+        font-size: 22px;
+        line-height: 22px;
+    }
+    
+    .offer__item-newprice{
+        font-size: 34px;
+    }
+    .offer__item-text{
+        font-size: 18px;
+    }
+    .offer__item-text{
+        margin-bottom: 50px;
+    }
+    
+
+    
 }
 
 @media (max-width: 360px){
@@ -784,5 +1144,40 @@ foreignObject{
     .header__btn{
         font-size: 16px;
         width: 100%;
+    }
+    .about__btn{
+        font-size: 14px;
+    }
+
+    .how-to__title{
+        font-size: 28px;
+        line-height: 28px;
+    }
+    .how-to__list-item{
+        font-size: 14px;
+    }
+    .offer__btn{
+        font-size: 14px;
+    }
+    .services__btn{
+        font-size: 12px;
+    }
+    .slider__description{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .offer__item-newprice{
+        font-size: 26px;
+    }
+    .offer__item-box{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .special__offer{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .contacts__form-btn{
+        font-size: 14px;
     }
 }
